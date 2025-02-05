@@ -3,23 +3,70 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Logs
-logs/
-*.log
-
-# Build outputs
+pnpm-debug.log*
 dist/
 build/
-*.cache
+
+# TypeScript
+*.tsbuildinfo
 
 # Environment variables
 .env
+.env.*.local
 
-# Frontend specific
+# Logs
+logs
+*.log
+*.log.*
+log/
+
+# Debugging
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.swd
+.DS_Store
+*.pid
+
+# Test Coverage
+coverage/
+
+# Temporary files
+tmp/
+temp/
+
+# OS and Editor-specific files
+Thumbs.db
+.DS_Store
+*.iml
+*.sublime-workspace
+*.sublime-project
+
+# React
 frontend/node_modules/
-frontend/dist/
+frontend/build/
+frontend/.cache/
 
-# Backend specific
-backend/node_modules/
-backend/dist/
+# TypeScript React
+frontend/dist/
+frontend/*.tsbuildinfo
+
+# Docker
+docker-compose.override.yml
+*.dockerfile
+
+# Kubernetes
+*.kube
+
+# CI/CD
+.gitlab-ci.yml
+.github/
+.vscode/
+*.env.local
+*.env.production.local
+
+# Miscellaneous
+backend/.env
+frontend/.env
